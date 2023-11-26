@@ -2,11 +2,10 @@ package com.techconative.financeTracker.model;
 
 import java.util.List;
 
+
 public class BookDTO {
 	
 	private List<Budget> budgetBook;
-	private List<Income> incomeBook;
-	private List<Expense> expenseBook;
 	public List<Budget> getBudgetBook() {
 		return budgetBook;
 	}
@@ -25,6 +24,6 @@ public class BookDTO {
 	public void setExpenseBook(List<Expense> expenseBook) {
 		this.expenseBook = expenseBook;
 	}
-	
-	
+	private List<Income> incomeBook;
+	private List<Expense> expenseBook;
 }

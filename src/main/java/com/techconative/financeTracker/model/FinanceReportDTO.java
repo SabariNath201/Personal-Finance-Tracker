@@ -7,26 +7,6 @@ public class FinanceReportDTO {
 		Profit, Loss;
 	}
 	private List<FinanceDTO> financeList;
-	private Double totalIncome;
-	private Double totalExpense;
-	private Double totalProfitOrLoss;
-	private PL Profit_Loss;
-	
-	
-	public PL getProfit_Loss() {
-		return Profit_Loss;
-	}
-	public void setProfit_Loss(PL profit_Loss) {
-		Profit_Loss = profit_Loss;
-	}
-	public Double getTotalProfitOrLoss() {
-		return totalProfitOrLoss;
-	}
-	public void setTotalProfitOrLoss(Double totalProfitOrLoss) {
-		this.totalProfitOrLoss = totalProfitOrLoss;
-	}
-
-	
 	public List<FinanceDTO> getFinanceList() {
 		return financeList;
 	}
@@ -45,6 +25,21 @@ public class FinanceReportDTO {
 	public void setTotalExpense(Double totalExpense) {
 		this.totalExpense = totalExpense;
 	}
-	
+	public Double getTotalProfitOrLoss() {
+		return totalProfitOrLoss;
+	}
+	public void setTotalProfitOrLoss(Double totalProfitOrLoss) {
+		this.totalProfitOrLoss = totalProfitOrLoss;
+	}
+	public PL getProfit_Loss() {
+		return Profit_Loss;
+	}
+	public void setProfit_Loss(PL profit_Loss) {
+		Profit_Loss = profit_Loss;
+	}
+	private Double totalIncome;
+	private Double totalExpense;
+	private Double totalProfitOrLoss;
+	private PL Profit_Loss;
 
 }

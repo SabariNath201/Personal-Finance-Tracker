@@ -5,49 +5,39 @@ import java.time.LocalDate;
 public class ExpenseDTO {
 	
 	private Integer expenseId;
-	private LocalDate dateOfTransaction;
-	private String paidTo;
-	private String description;
-	private Double amountDebited;
-	
-	public Double getAmountDebited() {
-		return amountDebited;
+	public Integer getExpenseId() {
+		return expenseId;
 	}
-
-	public void setAmountDebited(Double amountDebited) {
-		this.amountDebited = amountDebited;
-	}
-
-	public String getPaidTo() {
-		return paidTo;
-	}
-
-	public void setPaidTo(String paidTo) {
-		this.paidTo = paidTo;
-	}
-	
 	public void setExpenseId(Integer expenseId) {
 		this.expenseId = expenseId;
 	}
-	
+	public LocalDate getDateOfTransaction() {
+		return dateOfTransaction;
+	}
+	public void setDateOfTransaction(LocalDate dateOfTransaction) {
+		this.dateOfTransaction = dateOfTransaction;
+	}
+	public String getPaidTo() {
+		return paidTo;
+	}
+	public void setPaidTo(String paidTo) {
+		this.paidTo = paidTo;
+	}
 	public String getDescription() {
 		return description;
 	}
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	public LocalDate getDateOfTransaction() {
-		return dateOfTransaction;
+	public Double getAmountDebited() {
+		return amountDebited;
 	}
-
-	public void setDateOfTransaction(LocalDate dateOfTransaction) {
-		this.dateOfTransaction = dateOfTransaction;
+	public void setAmountDebited(Double amountDebited) {
+		this.amountDebited = amountDebited;
 	}
-
-	public Integer getExpenseId() {
-		
-		return expenseId;
-	}
+	private LocalDate dateOfTransaction;
+	private String paidTo;
+	private String description;
+	private Double amountDebited;
 
 }

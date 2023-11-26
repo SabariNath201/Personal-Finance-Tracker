@@ -5,16 +5,6 @@ import java.time.LocalDate;
 public class IncomeDTO {
 	
 	private Integer incomeId;
-	private String description;
-	private Double amountCredited;
-	private LocalDate dateOfTransaction;
-
-	public LocalDate getDateOfTransaction() {
-		return dateOfTransaction;
-	}
-	public void setDateOfTransaction(LocalDate dateOfTransaction) {
-		this.dateOfTransaction = dateOfTransaction;
-	}
 	public Integer getIncomeId() {
 		return incomeId;
 	}
@@ -33,6 +23,14 @@ public class IncomeDTO {
 	public void setAmountCredited(Double amountCredited) {
 		this.amountCredited = amountCredited;
 	}
-		
+	public LocalDate getDateOfTransaction() {
+		return dateOfTransaction;
+	}
+	public void setDateOfTransaction(LocalDate dateOfTransaction) {
+		this.dateOfTransaction = dateOfTransaction;
+	}
+	private String description;
+	private Double amountCredited;
+	private LocalDate dateOfTransaction;
 	
 }

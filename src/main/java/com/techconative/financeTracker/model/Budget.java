@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="budget")
 public class Budget {
-	//budgetId, income, rentExpense, foodExpense, insuranceExpense, savings
+	
 	@Id
 	@GeneratedValue(strategy 
             = GenerationType.AUTO) 
@@ -22,17 +22,6 @@ public class Budget {
 	public void setBudgetId(Integer budgetId) {
 		this.budgetId = budgetId;
 	}
-	@Column(name = "income")
-	private Double income;
-	@Column(name = "rent_Expense")
-	private Double rentExpense;
-	@Column(name = "food_Expense")
-	private Double foodExpense;
-	@Column(name = "insurance_Expense")
-	private Double insuranceExpense;
-	@Column(name = "savings")
-	private Double savings;
-
 	public Double getIncome() {
 		return income;
 	}
@@ -63,5 +52,15 @@ public class Budget {
 	public void setSavings(Double savings) {
 		this.savings = savings;
 	}
+	@Column(name = "income")
+	private Double income;
+	@Column(name = "rent_Expense")
+	private Double rentExpense;
+	@Column(name = "food_Expense")
+	private Double foodExpense;
+	@Column(name = "insurance_Expense")
+	private Double insuranceExpense;
+	@Column(name = "savings")
+	private Double savings;
 
 }

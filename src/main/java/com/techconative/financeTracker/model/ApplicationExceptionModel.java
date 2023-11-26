@@ -3,7 +3,6 @@ package com.techconative.financeTracker.model;
 public class ApplicationExceptionModel {
 	
 	private String errorCode;
-	private String errorMessage;
 	public String getErrorCode() {
 		return errorCode;
 	}
@@ -16,5 +15,6 @@ public class ApplicationExceptionModel {
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
 	}
+	private String errorMessage;
 
 }
