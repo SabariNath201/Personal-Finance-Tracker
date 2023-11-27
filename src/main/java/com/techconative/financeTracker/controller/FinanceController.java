@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.techconative.financeTracker.exception.FinanceException;
@@ -19,17 +20,17 @@ import com.techconative.financeTracker.model.BudgetDTO;
 import com.techconative.financeTracker.model.ExpenseDTO;
 import com.techconative.financeTracker.model.FinanceReportDTO;
 import com.techconative.financeTracker.model.IncomeDTO;
-import com.techconative.financeTracker.service.ExpenseService;
-import com.techconative.financeTracker.service.FinanceService;
+import com.techconative.financeTracker.service.ExpenseServiceImpl;
+import com.techconative.financeTracker.service.FinanceServiceImpl;
 
 @RestController
 @RequestMapping(value = "/api")
 public class FinanceController {
 	@Autowired
-	private ExpenseService expenseService;
+	private ExpenseServiceImpl expenseService;
 	
 	@Autowired
-	private FinanceService financeService;
+	private FinanceServiceImpl financeService;
 	
 	@PostMapping(value ="/incomes")
 	public ResponseEntity<IncomeDTO> addIncome(@RequestBody IncomeDTO incomedto){
@@ -73,7 +74,7 @@ public class FinanceController {
 	}
 	
 	@GetMapping(value = "/books")
-	public ResponseEntity<BookDTO> getBooks() throws NotFoundException{ 
-		return ResponseEntityConverter.ok(financeService.getBooks());
+	public ResponseEntity<BookDTO> getBooks(@RequestParam String bookFilter) throws NotFoundException{ 
+		return ResponseEntityConverter.ok(financeService.getBooks(bookFilter));
 	}
 }

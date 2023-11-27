@@ -1,0 +1,24 @@
+{
+    "financeList": [
+        {
+            "incomeId": null,
+            "expenseId": 1,
+            "dateOfTransaction": "2023-11-21",
+            "description": "Movie ticket",
+            "amountCredited": null,
+            "amountDebited": 300.0
+        },
+        {
+            "incomeId": 1,
+            "expenseId": null,
+            "dateOfTransaction": "2023-11-26",
+            "description": "Bonus",
+            "amountCredited": 10000.0,
+            "amountDebited": null
+        }
+    ],
+    "totalIncome": 10000.0,
+    "totalExpense": 300.0,
+    "totalProfitOrLoss": 9700.0,
+    "profit_Loss": "Profit"
+}

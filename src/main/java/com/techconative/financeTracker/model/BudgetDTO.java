@@ -4,6 +4,12 @@ package com.techconative.financeTracker.model;
 public class BudgetDTO {
 	
 	private Integer budgetId;
+	private Double income;
+	private Double rentExpense;
+	private Double foodExpense;
+	private Double insuranceExpense;
+	private Double savings;
+	
 	public Integer getBudgetId() {
 		return budgetId;
 	}
@@ -40,10 +46,6 @@ public class BudgetDTO {
 	public void setSavings(Double savings) {
 		this.savings = savings;
 	}
-	private Double income;
-	private Double rentExpense;
-	private Double foodExpense;
-	private Double insuranceExpense;
-	private Double savings;
+
 
 }

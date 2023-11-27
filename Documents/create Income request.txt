@@ -1,0 +1,5 @@
+{
+    "description": "Bonus",
+    "dateOfTransaction": "2023-11-26",
+    "amountCredited": 10000.0
+}

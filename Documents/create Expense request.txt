@@ -1,0 +1,6 @@
+{
+    "dateOfTransaction": "2023-11-21",
+    "paidTo": "Guhan movies",
+    "description": "Movie ticket",
+    "amountDebited": 300.0
+}

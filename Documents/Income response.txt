@@ -1,0 +1,6 @@
+{
+    "incomeId": 2,
+    "description": "Salary",
+    "amountCredited": 10000.0,
+    "dateOfTransaction": "2023-11-25"
+}

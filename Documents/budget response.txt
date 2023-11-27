@@ -1,0 +1,8 @@
+{
+    "budgetId": 1,
+    "income": 50000.0,
+    "rentExpense": 10000.0,
+    "foodExpense": 6000.0,
+    "insuranceExpense": 3000.0,
+    "savings": 5000.0
+}

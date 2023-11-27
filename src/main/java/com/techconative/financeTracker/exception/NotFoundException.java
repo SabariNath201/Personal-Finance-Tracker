@@ -15,7 +15,7 @@ public class NotFoundException extends Exception{
 	}
 	
 	public NotFoundException(String errorCode, String errorMessage, String...parameter) {
-		System.out.println("1--" + errorCode+" -- 2 -- "+ errorMessage + " -- 3 -- "+ parameter);
+	
 		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;
 		this.parameter = parameter;

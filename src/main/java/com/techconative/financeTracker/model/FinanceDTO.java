@@ -1,10 +1,12 @@
 package com.techconative.financeTracker.model;
 
-import java.time.LocalDate;
-
-public class FinanceDTO {
+public class FinanceDTO extends CommonDTO{
 	
 	private Integer incomeId;
+	private Integer expenseId;
+	private Double amountCredited;
+	private Double amountDebited;
+	
 	public Integer getIncomeId() {
 		return incomeId;
 	}
@@ -17,18 +19,7 @@ public class FinanceDTO {
 	public void setExpenseId(Integer expenseId) {
 		this.expenseId = expenseId;
 	}
-	public LocalDate getDateOfTransaction() {
-		return dateOfTransaction;
-	}
-	public void setDateOfTransaction(LocalDate dateOfTransaction) {
-		this.dateOfTransaction = dateOfTransaction;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	
 	public Double getAmountCredited() {
 		return amountCredited;
 	}
@@ -41,10 +32,6 @@ public class FinanceDTO {
 	public void setAmountDebited(Double amountDebited) {
 		this.amountDebited = amountDebited;
 	}
-	private Integer expenseId;
-	private LocalDate dateOfTransaction;
-	private String description;
-	private Double amountCredited;
-	private Double amountDebited;
+
 
 }
